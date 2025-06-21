@@ -8,7 +8,8 @@ I used to do this with **JSON**, but converted it to **SQL** to make it more rel
 ## Usage
   
 This is one of my most used functions of my virtual assistant. It runs in a Raspberry Pi, that is not powerfull enough to run Artificial Intelligence models; and Natural Language in Spanish do not work as very well, so I've tryed to make it the most naturallanguaged as possible.  
-It keeps the reminders and everyday it checks if there's something scheduled. Then it sends it to the user (just me for now), few times during the day until posted as completed or deleted. It also checks for reminders the night before, and one week before. So it would tell you "_reminder in one week: Cecilia’s Birthday_".  
+It keeps the reminders and everyday it checks if there's something scheduled. Then it sends it to the user (just me for now), few times during the day until posted as completed or deleted. It also checks for reminders the night before, and one week before. So it would tell you "_reminder in one week: Cecilia’s Birthday_". And if it is the word _birthday_ in it, it adds a party, balloon, or cake emoji to the messaje. Details.  
+All this interactions happens via Telegram and the Telegram API.  
 
 ### Requests
 So you first ask for something by calling:
@@ -55,6 +56,37 @@ print(recordat.orios(7654321, "get my reminders of abril")
 If you don’t remember when that birthday was, you can just ask for it:
 ```python
 print(recordat.orios(7654321, "search in my reminders for Javier's birthday")
+```
+getting:
+```yaml
+# output
+• JAVIER'S BIRTHDAY on June the 3rd
+
+similar coincidences:
+7/13th - daniel's birthday
+31/10th - call javier's mum
+```
+It finds the similar or probable ones using [the fuzz][https://github.com/seatgeek/thefuzz] module.
+
+#### Deleting
+When it sends the reminders it does it sending it with two buttons: **Done** and **Delete**. So is not very common to use this function. But if by any misskeyed or something is needed to delete a reminder the commands would be:
+```python
+print(recordat.orios(7654321, "delete reminder January 9th")
+```
+And it would return a list with the reminders of that day where you tap the one that you want to be deleted.
+
+#### Creating
+To create reminders you just tell to it that you want a reminder, when, and what. There are a couple of ways to do it so:
+```python
+- "reminder march 12th important thing to do"
+- "reminder tomorrow take the cardboard to the school"
+- "reminder next Tuesday get prepared for the volleyball match"
+```
+The nice thing is that the responses tell you how much time is left:
+```markdown
+-> Reminder March 12th created (3 months 2 days left).
+-> Take the cardboard to the school (Tomorrow).
+-> Next Thursday: _get prepared for the volleyball match_ (in 4 days).
 ```
 
 ## Features
