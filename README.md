@@ -71,7 +71,7 @@ It finds the similar or probable ones using [the fuzz][https://github.com/seatge
 #### Deleting
 When it sends the reminders it does it sending it with two buttons: **Done** and **Delete**. So is not very common to use this function. But if by any misskeyed or something is needed to delete a reminder the commands would be:
 ```python
-print(recordat.orios(7654321, "delete reminder January 9th")
+print(recordat.orios(7654321, "delete reminder January 9th"))
 ```
 And it would return a list with the reminders of that day where you tap the one that you want to be deleted.
 
