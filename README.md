@@ -7,7 +7,9 @@ I used to do this with **JSON**, but converted it to **SQL** to make it more rel
 
 ## Usage
   
-This is one of my most used functions of my virtual assistant. It runs in a Raspberry Pi, that is not powerfull enough to run Artificial Intelligence models; and Natural Language in Spanish do not work as very well, so I've tryed to make it the most naturallanguajed as possible.  
+This is one of my most used functions of my virtual assistant. It runs in a Raspberry Pi, that is not powerfull enough to run Artificial Intelligence models; and Natural Language in Spanish do not work as very well, so I've tryed to make it the most naturallanguaged as possible.  
+It keeps the reminders and everyday it checks if there's something scheduled. Then it sends it to the user (just me for now), few times during the day until posted as completed or deleted. It also checks for reminders the night before, and one week before. So it would tell you "_reminder in one week: Cecilia’s Birthday_".  
+
 So you first ask for something by calling:
 ```python
 import recordat
@@ -15,6 +17,18 @@ import recordat
 recordat.orio(chat_id = 7654321, vaina = '<<request here>>')
 ```
 The word _Recordatorio_ means _Reminder_, hence the name. 
+The **request** might be one of many options:
+If you want to check at your reminders you can ask for them as:
+
+- Dame mis recordatorios - (Give me my reminders).
+- Me dariás mis recordatorios - (Would you give me my reminders).
+- Muestrane mis recordatorios - (Show me my reminders).
+- Mandame mis recordatorios - (Send me my reminders).
+
+Just showing how it consider differents words and conjugations.
+
+You can also specify the month you want:
+
 
 ## Features
 
