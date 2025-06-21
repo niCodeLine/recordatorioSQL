@@ -10,8 +10,8 @@ I used to do this with **JSON**, but converted it to **SQL** to make it more rel
 This is one of my most used functions of my virtual assistant. It runs in a Raspberry Pi, that is not powerfull enough to run Artificial Intelligence models; and Natural Language in Spanish do not work as very well, so I've tryed to make it the most naturallanguaged as possible.  
 It keeps the reminders and everyday it checks if there's something scheduled. Then it sends it to the user (just me for now), few times during the day until posted as completed or deleted. It also checks for reminders the night before, and one week before. So it would tell you "_reminder in one week: Cecilia’s Birthday_".  
 
-### Callings
-So you first ask for something by doing:
+### Requests
+So you first ask for something by calling:
 ```python
 import recordat
 
@@ -40,7 +40,7 @@ print(recordat.orios(7654321, "dame mis recordatorios de abril")
 print(recordat.orios(7654321, "get my reminders of abril")
 ```
 
-```markdown
+```yaml
 # output
 • APRIL •
 02 - License paperwork
@@ -48,13 +48,13 @@ print(recordat.orios(7654321, "get my reminders of abril")
 14 - Jerry's Birthday
 23 - Dinner with family
 ```
+
 **Note** _: I'm gonna proceed by exposing all the examples in English for understanding, even though all is made to work in Spanish._
 
 #### Searching
 If you don’t remember when that birthday was, you can just ask for it:
 ```python
-print(recordat.orios(7654321, "busca en mis recordatorios cumple de Javier")
-
+print(recordat.orios(7654321, "search in my reminders for Javier's birthday")
 ```
 
 ## Features
