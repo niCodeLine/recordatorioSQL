@@ -13,7 +13,10 @@ Need to fill this later.
 ## Features
 
 - **SQL**: Very fast.
-
+- **Fuzzy Searcher**: Don’t worry about small misspellings.
+- **Time Left**: How long until your special date.
+- **Spanish Verbs Conjugation Considerer**: Spanish, opposite than English, has many ways of verbs conjugatios. Here we consider that.
+- **Week Days**: You can say "reminder next Thursday this and that".
 
 ## Contributions
 
