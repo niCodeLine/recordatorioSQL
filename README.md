@@ -35,10 +35,10 @@ You can also specify the month you want:
 
 That would be something like:
 ```python
-print(recordat.orios(7654321, "dame mis recordatorios de abril")
+print(recordat.orios(7654321, "dame mis recordatorios de abril"))
 
 # English Translation
-print(recordat.orios(7654321, "get my reminders of abril")
+print(recordat.orios(7654321, "get my reminders of abril"))
 ```
 
 ```yaml
