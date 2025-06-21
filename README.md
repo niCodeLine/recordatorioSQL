@@ -20,14 +20,27 @@ The word _Recordatorio_ means _Reminder_, hence the name.
 The **request** might be one of many options:
 If you want to check at your reminders you can ask for them as:
 
-- Dame mis recordatorios - (Give me my reminders).
-- Me dariás mis recordatorios - (Would you give me my reminders).
-- Muestrane mis recordatorios - (Show me my reminders).
-- Mandame mis recordatorios - (Send me my reminders).
+- Dame mis recordatorios - (_Give me my reminders_).
+- Me dariás mis recordatorios - (_Would you give me my reminders_).
+- Muestrane mis recordatorios - (_Show me my reminders_).
+- Mandame mis recordatorios - (_Send me my reminders_).
 
 Just showing how it consider differents words and conjugations.
 
 You can also specify the month you want:
+- Dame mis recordatorios de abril - (_Give me my reminders of April_).
+
+That would be something like:
+```python
+print(recordat.orios(7654321, "dame mis recordatorios de abril")
+
+# output
+• APRIL •
+02 - License paperwork
+   - Get groceries
+14 - Jerry's Birthday
+23 - Dinner with family
+```
 
 
 ## Features
