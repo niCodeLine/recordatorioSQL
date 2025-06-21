@@ -55,7 +55,7 @@ print(recordat.orios(7654321, "get my reminders of abril"))
 #### Searching
 If you don’t remember when that birthday was, you can just ask for it:
 ```python
-print(recordat.orios(7654321, "search in my reminders for Javier's birthday")
+print(recordat.orios(7654321, "search in my reminders for Javier's birthday"))
 ```
 getting:
 ```yaml
