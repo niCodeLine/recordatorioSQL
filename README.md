@@ -75,7 +75,9 @@ print(recordat.orios(7654321, "delete reminder January 9th"))
 ```
 And it would return a list with the reminders of that day where you tap the one that you want to be deleted, as shown below:
 
-
+<p align="center">
+  <img src="images/delete_message.png" width="400">
+</p>
 
 #### Creating
 To create reminders you just tell to it that you want a reminder, when, and what. There are a couple of ways to do it so:
