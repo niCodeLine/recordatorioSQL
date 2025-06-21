@@ -7,8 +7,14 @@ I used to do this with **JSON**, but converted it to **SQL** to make it more rel
 
 ## Usage
   
-Need to fill this later.
+This is one of my most used functions of my virtual assistant. It runs in a Raspberry Pi, that is not powerfull enough to run Artificial Intelligence models; and Natural Language in Spanish do not work as very well, so I've tryed to make it the most naturallanguajed as possible.  
+So you first ask for something by calling:
+```python
+import recordat
 
+recordat.orio(chat_id = 7654321, vaina = '<<request here>>')
+```
+The word _Recordatorio_ means _Reminder_, hence the name. 
 
 ## Features
 
