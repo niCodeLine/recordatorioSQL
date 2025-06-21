@@ -38,7 +38,7 @@ That would be something like:
 print(recordat.orios(7654321, "dame mis recordatorios de abril"))
 
 # English Translation
-print(recordat.orios(7654321, "get my reminders of abril"))
+print(recordat.orios(7654321, "get my April reminders"))
 ```
 
 ```yaml
@@ -73,7 +73,9 @@ When it sends the reminders it does it sending it with two buttons: **Done** and
 ```python
 print(recordat.orios(7654321, "delete reminder January 9th"))
 ```
-And it would return a list with the reminders of that day where you tap the one that you want to be deleted.
+And it would return a list with the reminders of that day where you tap the one that you want to be deleted, as shown below:
+
+
 
 #### Creating
 To create reminders you just tell to it that you want a reminder, when, and what. There are a couple of ways to do it so:
