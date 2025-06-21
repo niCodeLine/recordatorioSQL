@@ -11,12 +11,13 @@ This is one of my most used functions of my virtual assistant. It runs in a Rasp
 It keeps the reminders and everyday it checks if there's something scheduled. Then it sends it to the user (just me for now), few times during the day until posted as completed or deleted. It also checks for reminders the night before, and one week before. So it would tell you "_reminder in one week: Cecilia’s Birthday_".  
 
 ### Callings
-So you first ask for something by calling:
+So you first ask for something by doing:
 ```python
 import recordat
 
 recordat.orio(chat_id = 7654321, vaina = '<<request here>>')
 ```
+#### Getting
 The word _Recordatorio_ means _Reminder_, hence the name. 
 The **request** might be one of many options:
 If you want to check at your reminders you can ask for them as:
@@ -29,12 +30,16 @@ If you want to check at your reminders you can ask for them as:
 Just showing how it consider differents words and conjugations.
 
 You can also specify the month you want:
-- Dame mis recordatorios de abril - (_Give me my reminders of April_).
+- Dame mis recordatorios de septiembre - (_Give me my reminders of September_).
 
 That would be something like:
 ```python
 print(recordat.orios(7654321, "dame mis recordatorios de abril")
+
+# English Translation
+print(recordat.orios(7654321, "get my reminders of abril")
 ```
+
 ```markdown
 # output
 • APRIL •
@@ -43,7 +48,14 @@ print(recordat.orios(7654321, "dame mis recordatorios de abril")
 14 - Jerry's Birthday
 23 - Dinner with family
 ```
+**Note** _: I'm gonna proceed by exposing all the examples in English for understanding, even though all is made to work in Spanish._
 
+#### Searching
+If you don’t remember when that birthday was, you can just ask for it:
+```python
+print(recordat.orios(7654321, "busca en mis recordatorios cumple de Javier")
+
+```
 
 ## Features
 
