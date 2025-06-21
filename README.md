@@ -2,7 +2,7 @@
 
 This package is to get my reminders in my virtual assistant. Most of them being birthdays.  
   
-I used to do this with **JSON**, but converted it to **SQL** to make it more reliable.
+I used to do this with **JSON**, but converted it to **SQL** to make it more reliable (Via sqlite3).
 
 
 ## Usage
