@@ -24,7 +24,7 @@ The **request** might be one of many options:
 If you want to check at your reminders you can ask for them as:
 
 - Dame mis recordatorios - (_Give me my reminders_).
-- Me dariás mis recordatorios - (_Would you give me my reminders_).
+- Me darías mis recordatorios - (_Would you give me my reminders_).
 - Muestrane mis recordatorios - (_Show me my reminders_).
 - Mandame mis recordatorios - (_Send me my reminders_).
 
