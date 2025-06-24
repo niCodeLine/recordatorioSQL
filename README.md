@@ -90,7 +90,7 @@ The nice thing is that the responses tell you how much time is left:
 ```markdown
 -> Reminder March 12th created (3 months 2 days left).
 -> Take the cardboard to the school (Tomorrow).
--> Next Thursday: _get prepared for the volleyball match_ (in 4 days).
+-> Next Thursday: *get prepared for the volleyball match* (in 4 days).
 ```
 
 ## Features
