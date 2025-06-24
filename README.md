@@ -66,7 +66,7 @@ similar coincidences:
 7/13th - daniel's birthday
 31/10th - call javier's mum
 ```
-It finds the similar or probable ones using [the fuzz][https://github.com/seatgeek/thefuzz] module.
+It finds the similar or probable ones using [the fuzz](https://github.com/seatgeek/thefuzz) module.
 
 #### Deleting
 When it sends the reminders it does it sending it with two buttons: **Done** and **Delete**. So is not very common to use this function. But if by any misskeyed or something is needed to delete a reminder the commands would be:
