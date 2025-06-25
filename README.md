@@ -86,18 +86,12 @@ To create reminders you just tell to it that you want a reminder, when, and what
 - "reminder tomorrow take the cardboard to the school"
 - "reminder next Tuesday get prepared for the volleyball match"
 ```
-The nice thing is that the responses tell you how much time is left:
+The nice thing is, the responses tell you how much time is left:
 ```yaml
 -> Reminder March 12th created (3 months 2 days left).
 -> Take the cardboard to the school (Tomorrow).
 -> Next Thursday: *get prepared for the volleyball match* (in 4 days).
 ```
-
-<ul style="list-style: none; padding: 0;">
-  <li>&rarr; Reminder March 12th created (3 months 2 days left).</li>
-  <li>&rarr; Take the cardboard to the school (Tomorrow).</li>
-  <li>&rarr; Next Thursday: <em>get prepared for the volleyball match</em> (in 4 days).</li>
-</ul>
 
 ## Features
 
