@@ -87,10 +87,10 @@ To create reminders you just tell to it that you want a reminder, when, and what
 - "reminder next Tuesday get prepared for the volleyball match"
 ```
 The nice thing is that the responses tell you how much time is left:
-```markdown
+```yaml
 -> Reminder March 12th created (3 months 2 days left).
 -> Take the cardboard to the school (Tomorrow).
--> Next Thursday: get prepared for the volleyball match (in 4 days).
+-> Next Thursday: *get prepared for the volleyball match* (in 4 days).
 ```
 
 ## Features
